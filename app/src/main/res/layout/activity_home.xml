@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_animation"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="205dp"
+        android:elevation="10dp"
+        android:src="@drawable/placeholders" />
+
+    <TextView
+        android:layout_width="292dp"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/kaushan_script"
+        android:gravity="center"
+        android:text="Welcome IAO"
+        android:textAlignment="center"
+        android:textColor="#FDFFFC"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

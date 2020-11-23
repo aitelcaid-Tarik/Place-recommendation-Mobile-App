@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_border"
+        android:elevation="13dp">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addLocation"
+        android:layout_width="184dp"
+        android:layout_height="302dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="105dp"
+        android:clickable="true"
+        android:elevation="13dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:elevation="13dp"
+        app:maxImageSize="28dp"
+        app:srcCompat="@drawable/addlocation" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/gps"
+        android:layout_width="184dp"
+        android:layout_height="302dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:clickable="true"
+        android:elevation="13dp"
+        app:backgroundTint="#CDCDCD"
+        app:elevation="13dp"
+        app:maxImageSize="28dp"
+        app:srcCompat="@drawable/gps" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/list"
+        android:layout_width="184dp"
+        android:layout_height="302dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="170dp"
+        android:clickable="true"
+        android:elevation="13dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:elevation="13dp"
+        app:maxImageSize="28dp"
+        app:srcCompat="@drawable/list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/satellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:elevation="13dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:elevation="13dp"
+        app:maxImageSize="31dp"
+        app:srcCompat="@drawable/satellite" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="584dp"
+        android:clickable="true"
+        android:elevation="13dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:elevation="13dp"
+        app:maxImageSize="30dp"
+        app:srcCompat="@drawable/north" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="300dp"
+        android:clickable="true"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:maxImageSize="28dp"
+        app:srcCompat="@drawable/night1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="364dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:clickable="true"
+        app:maxImageSize="34dp"
+        app:srcCompat="@drawable/street" />
+
+</RelativeLayout>

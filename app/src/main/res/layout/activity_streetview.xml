@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StreetView">
+
+    <fragment
+        android:id="@+id/streetViewMap"
+        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="635dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:clickable="true"
+        android:elevation="6dp"
+        app:maxImageSize="32dp"
+        app:srcCompat="@drawable/terrain" />
+
+</FrameLayout>

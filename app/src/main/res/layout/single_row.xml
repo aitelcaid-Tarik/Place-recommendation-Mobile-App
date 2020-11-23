@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#FDFFFC"
+    android:backgroundTint="#FDFFFC"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemWraper"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFFFC"
+        android:backgroundTint="#FDFFFC"
+        app:cardBackgroundColor="#EDF2F4"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                app:srcCompat="@drawable/place" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="5dp"
+                    android:text="name"
+                    android:textColor="#011627"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/descr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="description"
+                    android:textColor="#011627"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:mirrorForRtl="false"
+                    android:numStars="5"
+                    android:progressTint="#FFD700"
+                    android:scaleX="1.7"
+                    android:scaleY="1.7"
+                    android:scrollbarStyle="insideOverlay"
+                    android:stepSize="0.5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
